@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen"
+    tools:context=".ui.activity.play.GameVsPlayerActivity">
+
+    <ImageView
+        android:id="@+id/iv_title"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_btn_close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:src="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_player_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/comic_sans_bold"
+        android:text="@string/text_player_name_vs_com"
+        android:textColor="#00AFE3"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_title" />
+
+
+    <ImageView
+        android:id="@+id/iv_btn_rock_player"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_rock"
+        app:layout_constraintEnd_toEndOf="@+id/tv_player_name"
+        app:layout_constraintStart_toStartOf="@id/tv_player_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_player_name" />
+
+    <ImageView
+        android:id="@+id/iv_btn_paper_player"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_paper"
+        app:layout_constraintEnd_toEndOf="@id/iv_btn_rock_player"
+        app:layout_constraintStart_toStartOf="@id/iv_btn_rock_player"
+        app:layout_constraintTop_toBottomOf="@id/iv_btn_rock_player" />
+
+
+    <ImageView
+        android:id="@+id/iv_btn_scissor_player"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_scissor"
+        app:layout_constraintEnd_toEndOf="@id/iv_btn_paper_player"
+        app:layout_constraintStart_toStartOf="@id/iv_btn_paper_player"
+        app:layout_constraintTop_toBottomOf="@id/iv_btn_paper_player" />
+
+    <TextView
+        android:id="@+id/tv_computer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/comic_sans_bold"
+        android:text="@string/text_name_player_2"
+        android:textColor="#00AFE3"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_title" />
+
+
+    <ImageView
+        android:id="@+id/iv_rock_computer"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_rock"
+        app:layout_constraintEnd_toEndOf="@id/tv_computer_name"
+        app:layout_constraintStart_toStartOf="@id/tv_computer_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_computer_name" />
+
+    <ImageView
+        android:id="@+id/iv_paper_computer"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_paper"
+        app:layout_constraintEnd_toEndOf="@+id/iv_rock_computer"
+        app:layout_constraintStart_toStartOf="@id/iv_rock_computer"
+        app:layout_constraintTop_toBottomOf="@id/iv_rock_computer" />
+
+    <ImageView
+        android:id="@+id/iv_scissor_computer"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_scissor"
+        app:layout_constraintStart_toStartOf="@id/iv_paper_computer"
+        app:layout_constraintTop_toBottomOf="@id/iv_paper_computer" />
+
+    <ImageView
+        android:id="@+id/iv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_vs"
+        app:layout_constraintEnd_toStartOf="@id/iv_paper_computer"
+        app:layout_constraintStart_toEndOf="@id/iv_btn_paper_player"
+        app:layout_constraintTop_toBottomOf="@id/iv_rock_computer" />
+
+    <ImageView
+        android:id="@+id/iv_btn_refresh"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

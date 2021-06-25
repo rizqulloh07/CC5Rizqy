@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_screen"
+    tools:context=".ui.fragment.intro.FirstFragment">
+
+    <ImageView
+        android:id="@+id/iv_landing_page_1"
+        android:src="@drawable/ic_landing_page_1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="180dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_landing_page_1"
+        android:fontFamily="@font/comic_sans_ms"
+        app:layout_constraintStart_toStartOf="@+id/iv_landing_page_1"
+        app:layout_constraintEnd_toEndOf="@+id/iv_landing_page_1"
+        app:layout_constraintTop_toBottomOf="@+id/iv_landing_page_1"
+        android:layout_marginTop="20dp"
+        android:text="@string/text_landing_page_1"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/iv_next_landing_page_1"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:rotationY="180"
+        android:src="@drawable/ic_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guide"
+        tools:ignore="ContentDescription"
+        android:layout_marginRight="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_end="100dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

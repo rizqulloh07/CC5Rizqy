@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cc5_rizqy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CC5_Rizqy">
+        <activity android:name=".ui.activity.play.GameVsPlayerActivity" />
+        <activity android:name=".ui.activity.play.GameVsComActivity" />
+        <activity android:name=".ui.activity.landingpage.LandingPagesActivity" />
+        <activity android:name=".ui.activity.main.MainActivity" />
+        <activity android:name=".ui.activity.splashscreen.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

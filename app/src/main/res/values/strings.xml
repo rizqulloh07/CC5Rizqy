@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Rizqulloh</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_landing_page_1">Bermain suit melawan sesama pemain</string>
+    <string name="text_landing_page_3">Tuliskan namamu dibawah</string>
+    <string name="text_choose_your_opponent">PILIH LAWANMU</string>
+    <string name="text_result">Hasil Permainan</string>
+    <string name="text_replay">Main Lagi</string>
+    <string name="text_return">Kembali Ke Menu</string>
+    <string name="text_landing_page_2">Bermain suit melawan komputer</string>
+    <string name="text_status_winner">ERVIN MENANG</string>
+    <string name="text_player_name_vs_com">COM</string>
+    <string name="text_name_player_2">Player 2</string>
+    <string name="text_player_vs_player">Nama Pemain vs Pemain</string>
+    <string name="text_player_vs_cpu">Nama Pemain vs CPU</string>
+</resources>
